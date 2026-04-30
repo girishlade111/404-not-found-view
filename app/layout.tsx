@@ -7,8 +7,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "404 Not Found",
-  description: "A modern view if your app crashed",
-    generator: 'v0.app'
+  description: "A modern 404 error page"
 }
 
 export default function RootLayout({

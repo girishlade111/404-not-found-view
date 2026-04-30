@@ -2,8 +2,6 @@
 
 > A stylish and modern 404 error page built with Next.js, React, and Tailwind CSS
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/gileb64375-5584s-projects/v0-404-not-found-view)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/dd6riBSqd6y)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-black?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
 
@@ -12,8 +10,6 @@
 ## Overview
 
 This project is a **custom 404 Not Found error page** designed with a modern, creative aesthetic. It serves as the default error page when users navigate to non-existent routes in the Next.js application. The page features an engaging visual design with smooth animations and a clean user experience.
-
-> **Auto-synced** with your [v0.app](https://v0.app) deployments - any changes made in the deployed app are automatically pushed to this repository.
 
 ---
 
@@ -57,8 +53,8 @@ flowchart TD
     end
 
     subgraph Deployment["Deployment"]
-        Vercel[Vercel Platform]
-        CDN[Vercel CDN]
+        Platform[Web Platform]
+        CDN[CDN]
     end
 
     Browser -->|HTTP Requests| NextJS
@@ -71,8 +67,8 @@ flowchart TD
     Utils -->|Class Merging| CVA
     CVA -->|Variants| TailwindMerge
     TailwindMerge -->|CN Helper| clsx
-    Vercel -->|CDN Delivery| Browser
-    NextJS -->|Deploy to| Vercel
+    Platform -->|CDN Delivery| Browser
+    NextJS -->|Deploy to| Platform
     CDN -->|Static Assets|
 ```
 
@@ -125,16 +121,16 @@ flowchart TD
 ├── components/
 │   └── ui/                       # UI components
 │       ├── button.tsx           # Button component
-│       └── theme-provider.tsx    # Theme provider
+│       └── theme-provider.tsx   # Theme provider
 ├── lib/
 │   └── utils.ts                  # Utility functions
 ├── public/                       # Static assets
-├── tailwind.config.ts            # Tailwind configuration
+├── tailwind.config.ts          # Tailwind configuration
 ├── next.config.mjs              # Next.js configuration
-├── postcss.config.mjs            # PostCSS configuration
-├── tsconfig.json                 # TypeScript configuration
+├── postcss.config.mjs           # PostCSS configuration
+├── tsconfig.json                # TypeScript configuration
 ├── package.json                 # Dependencies
-└── README.md                    # This file
+└── README.md                   # This file
 ```
 
 ---
@@ -150,7 +146,7 @@ flowchart TD
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/404-not-found-view.git
+git clone https://github.com/girishlade111/404-not-found-view.git
 
 # Navigate to project directory
 cd 404-not-found-view
@@ -216,18 +212,6 @@ The project uses **Tailwind CSS v3** with custom configuration:
 
 ## Deployment
 
-### Vercel (Recommended)
-
-The project is pre-configured for Vercel deployment:
-
-1. **Connect Repository** to Vercel
-2. **Framework Preset**: Next.js (automatic)
-3. **Build Command**: `npm run build`
-4. **Output Directory**: `.next`
-5. **Install Command**: `npm install`
-
-> **Live URL**: [https://vercel.com/gileb64375-5584s-projects/v0-404-not-found-view](https://vercel.com/gileb64375-5584s-projects/v0-404-not-found-view)
-
 ### Build for Production
 
 ```bash
@@ -235,14 +219,16 @@ npm run build
 # Output: .next/ directory
 ```
 
----
+### Deploy to Any Platform
 
-## How It Works
+This project can be deployed to any platform that supports Node.js:
 
-1. **Create & Modify** - Build your project using [v0.app](https://v0.app)
-2. **Deploy** - Deploy your changes from the v0 interface
-3. **Auto-Sync** - Changes are automatically pushed to this repository
-4. **Vercel Deploy** - Vercel deploys the latest version automatically
+- Vercel
+- Netlify
+- Railway
+- Render
+- Fly.io
+- Custom Node.js server
 
 ---
 
@@ -256,4 +242,3 @@ npm run build
 
 - **Documentation**: [Next.js Docs](https://nextjs.org/docs) | [Tailwind CSS](https://tailwindcss.com)
 - **Issues**: [Report Issues](https://github.com/anomalyco/opencode/issues)
-- **v0.app**: [Project Chat](https://v0.app/chat/projects/dd6riBSqd6y)
