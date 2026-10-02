@@ -369,4 +369,4 @@ Contributions are welcome! Please feel free to submit a **Pull Request**.
 
 ---
 
-**Made with ❤️ by [girishlade111](https://github.com/girishlade111)**
+**Built by Girish Lade** — [github.com/girishlade111](https://github.com/girishlade111) · [ladestack.in](https://ladestack.in)
